@@ -1,0 +1,19 @@
+.chip {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: var(--s);
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--surface);
+    border-radius: 16px;
+    padding: var(--m);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--primary);
+    color: var(--surface);
+}

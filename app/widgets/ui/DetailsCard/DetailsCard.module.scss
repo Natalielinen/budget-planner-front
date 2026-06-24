@@ -1,0 +1,10 @@
+.detailsCard {
+    min-width: 50%;
+
+    .cardHeader {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+}

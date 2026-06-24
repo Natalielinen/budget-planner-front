@@ -1,0 +1,16 @@
+.button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: var(--s);
+    padding: var(--xs) var(--m);
+    border-radius: 12px;
+    border: none;
+    background: var(--primary);
+    color: var(--surface);
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
