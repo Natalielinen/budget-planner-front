@@ -1,0 +1,49 @@
+.transactionItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--itemBg);
+    padding: var(--m);
+    border-radius: var(--m);
+
+    &:hover {
+        background-color: var(--itemHover);
+    }
+
+}
+
+.transactionInfo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--xs);
+
+    .transactionName {
+        font-weight: 700;
+        font-size: 0.95rem;
+        color: var(--textPrimary);
+    }
+
+    .transactionDate {
+        font-size: 0.8rem;
+        color: var(--textSecondary);
+    }
+}
+
+.transactionSum {
+    display: flex;
+    gap: var(--xs);
+    align-items: center;
+
+    .transactionSumValue {
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+}
+
+.income {
+    color: var(--incomeText);
+}
+
+.expense {
+    color: var(--expenseText);
+}

@@ -3,9 +3,16 @@
   --background: #f0f2f5;
   --surface: #ffffff;
   --foreground: #171717;
+  --textPrimary: #1a1a2e;
   --textSecondary: #64748b;
   --textMuted: #94a3b8;
   --primary: #1565c0;
+  --itemBg: #f8f9fa;
+  --itemHover: #e9ecef;
+  --incomeText: #2e7d32;
+  --expenseText: #c62828;
+  --balanceText: #1565c0;
+  --danger: #b71c1c;
 
   /* sizes */
   --xs: 8px;

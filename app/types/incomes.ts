@@ -1,5 +1,6 @@
 export type IncomesType = {
-    amount: number;
+    id: number;
+    amount: string;
     source: string;
     currency: string;
     date: string;

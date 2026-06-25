@@ -6,11 +6,18 @@
     padding: var(--xs) var(--m);
     border-radius: 12px;
     border: none;
-    background: var(--primary);
     color: var(--surface);
     cursor: pointer;
 
     &:hover {
         opacity: 0.8;
     }
+}
+
+.primary {
+    background: var(--primary);
+}
+
+.danger {
+    background: var(--danger);
 }
