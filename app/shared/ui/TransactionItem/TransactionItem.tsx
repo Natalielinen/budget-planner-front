@@ -30,7 +30,7 @@ const TransactionItem: FC<TransactionItemProps> = ({
                 <div
                     className={`${style.transactionSumValue} ${isIncome ? style.income : style.expense}`}
                 >
-                    {isIncome ? "+ " : "- "}{formatSum(parseFloat(transaction?.amount))}
+                    {isIncome ? "+ " : "- "}{formatSum(transaction?.amount)}
                 </div>
                 <Button text="✕" variant="danger" />
             </div>

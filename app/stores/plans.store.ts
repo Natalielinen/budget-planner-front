@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { plans as plansApi } from '../api/methods';
-import { PlanType } from '../types/types';
+import { PlanType } from '../types/plans';
 
 interface PlansState {
     plans: PlanType[];

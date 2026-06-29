@@ -28,3 +28,33 @@
         }
     }
 }
+
+.expenseInfo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--xs);
+
+    .expenseTitle {
+        font-weight: 700;
+        font-size: 0.95rem;
+        color: var(--textPrimary);
+    }
+
+    .expensePart {
+        font-size: 0.8rem;
+        color: var(--textSecondary);
+    }
+}
+
+.expenseSum {
+    display: flex;
+    gap: var(--xs);
+    align-items: center;
+
+    .expenseSumValue {
+        color: var(--expenseText);
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+}
