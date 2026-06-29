@@ -9,6 +9,9 @@
 }
 
 .planDetails {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--l);
     padding-top: var(--l);
 
     .generalInfo {
@@ -19,8 +22,8 @@
 
     .detailsSection {
         display: flex;
-        margin-top: var(--l);
         column-gap: var(--m);
+        width: 100%;
     }
 }
 

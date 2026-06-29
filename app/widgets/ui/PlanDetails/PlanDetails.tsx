@@ -6,6 +6,7 @@ import DetailsCard from "../DetailsCard/DetailsCard";
 import { formatSum } from "@/app/shared/utils/formatSum";
 
 import styles from "./PlanDetails.module.scss";
+import PlanExpenses from "../PlanExpenses/PlanExpenses";
 
 const PlanDetails = () => {
     const { incomesTotal, incomes } = useIncomesStore();
@@ -38,9 +39,11 @@ const PlanDetails = () => {
                 />
             </div>
 
+            <PlanExpenses />
+
             <div className={styles.detailsSection}>
                 <DetailsCard title="Доходы" icon="📥" transactions={incomes} isIncome />
-                <DetailsCard title="Обязательные расходы" icon="📤" transactions={[]} />
+                {/* <DetailsCard title="Обязательные расходы" icon="📤" transactions={[]} /> */}
             </div>
         </div>
     );
