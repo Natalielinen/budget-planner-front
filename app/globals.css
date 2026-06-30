@@ -44,3 +44,29 @@ body {
   margin: 0;
 }
 
+/* variants */ 
+.primary {
+    background: var(--primary);
+}
+
+.danger {
+    background: var(--danger);
+}
+
+.ghost {
+    background: transparent;
+}
+
+/* sizes */
+.sm {
+  padding: var(--xs) var(--s);
+}
+
+.md {
+  padding: var(--xs) var(--m);
+}
+
+.lg {
+  padding: var(--xs) var(--l);
+}
+
