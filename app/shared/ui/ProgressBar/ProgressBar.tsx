@@ -12,7 +12,7 @@ const ProgressBar: FC<ProgressBarProps> = ({ progress }) => {
         </div>
         <div className={styles.progressLabels}>
             <span>0%</span>
-            <span>{progress}% расходов</span>
+            <span>{progress}% расходов от дохода</span>
         </div>
     </div>
 

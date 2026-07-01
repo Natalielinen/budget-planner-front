@@ -43,6 +43,7 @@
     display: flex;
     gap: var(--s);
     align-items: center;
+    justify-content: flex-end;
     min-width: 150px;
 
     .transactionSumValue {

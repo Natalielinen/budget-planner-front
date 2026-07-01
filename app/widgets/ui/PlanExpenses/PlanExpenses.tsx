@@ -1,4 +1,4 @@
-import { Button, Card } from "@/app/shared";
+import { Button, Card, EmptyState } from "@/app/shared";
 import styles from "./PlanExpenses.module.scss";
 import { PlusIcon } from "lucide-react";
 import { formatSum } from "@/app/shared/utils/formatSum";
@@ -15,7 +15,7 @@ const PlanExpenses = () => {
             </div>
 
             <div className={styles.expensesList}>
-                {planExpenses.length > 0 &&
+                {planExpenses.length > 0 ?
                     planExpenses.map((exp) => (
                         <div className={styles.expenseItem} key={exp.id}>
                             <div className={styles.expenseInfo}>
@@ -39,7 +39,9 @@ const PlanExpenses = () => {
                             </div>
 
                         </div>
-                    ))}
+                    )) : <EmptyState title="обязательных расходов" />
+
+                }
             </div>
         </Card>
     );

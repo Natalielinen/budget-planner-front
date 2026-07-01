@@ -13,7 +13,7 @@ import usePlanExpensesStore from "@/app/stores/planExpenses.store";
 const PlanDetails = () => {
     const { incomesTotal, incomes } = useIncomesStore();
     const { plans, activePlan } = usePlansStore();
-    const { planExpenses } = usePlanExpensesStore();
+    const { planExpenses, totalPlanExpenses } = usePlanExpensesStore();
 
     const incomesIcon = <div className={styles.incomeIcon}>📈</div>;
     const expensesIcon = <div className={styles.expenseIcon}>📉</div>;
@@ -33,7 +33,7 @@ const PlanDetails = () => {
                 <GeneralInfo
                     icon={expensesIcon}
                     title="Обязательные расходы"
-                    value="₽0"
+                    value={totalPlanExpenses === 0 ? "₽0" : formatSum(totalPlanExpenses)}
                     valueColor="#c62828"
                 />
                 <GeneralInfo
@@ -41,7 +41,7 @@ const PlanDetails = () => {
                     title="Остаток"
                     value={formatSum(balance)}
                     valueColor="#1565c0"
-                    progress={50}
+                    progress={Number(((totalPlanExpenses / incomesTotal) * 100).toFixed(2)) || 0}
                 />
             </div>
 
@@ -51,7 +51,7 @@ const PlanDetails = () => {
                 planExpenses.length > 0 && <div className={styles.detailsSection}>
 
                     <DetailsCard title="Доходы" icon="📥" transactions={incomes} isIncome />
-                    {/* <DetailsCard title="Обязательные расходы" icon="📤" transactions={[]} /> */}
+                    <DetailsCard title="Расходы" icon="📤" transactions={[]} />
                 </div>
             }
 

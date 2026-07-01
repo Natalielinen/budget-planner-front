@@ -20,7 +20,7 @@ const GeneralInfo: FC<GeneralInfoProps> = ({ icon, title, value, valueColor = '#
             </div>
         </div>
 
-        {progress && <ProgressBar progress={progress} />}
+        {!!progress && <ProgressBar progress={progress} />}
     </Card>;
 }
 

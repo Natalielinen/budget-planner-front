@@ -15,3 +15,29 @@
         margin-top: var(--s);
     }
 }
+
+.expenseItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--s);
+    border-bottom: 1px solid var(--textMuted);
+    padding: var(--s) 0;
+}
+
+.expenseInfo {
+    display: flex;
+    flex-direction: column;
+
+    .expenseTitle {
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    .expensePart {
+        font-size: 0.9rem;
+        color: var(--textSecondary);
+    }
+}
+
+

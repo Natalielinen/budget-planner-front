@@ -5,3 +5,4 @@ export { default as ProgressBar} from "./ProgressBar/ProgressBar";
 export { default as Button} from "./Button/Button";
 export { default as TransactionItem} from "./TransactionItem/TransactionItem";
 export { default as IconButton} from "./IconButton/IconButton";
+export { default as EmptyState } from "./EmptyState/EmptyState";
